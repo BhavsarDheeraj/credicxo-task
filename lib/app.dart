@@ -7,6 +7,23 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Credicxo',
       home: MoviesListPage(),
+      theme: getTheme(),
+    );
+  }
+
+  ThemeData getTheme() {
+    return ThemeData.dark().copyWith(
+      primaryColor: Colors.black,
+      canvasColor: Colors.black,
+      splashColor: Colors.transparent,
+      scaffoldBackgroundColor: Colors.black,
+      hoverColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      accentColor: Colors.amber,
+      accentColorBrightness: Brightness.dark,
+      iconTheme: IconThemeData(color: Colors.yellowAccent),
+      dividerColor: Colors.white30,
     );
   }
 }
